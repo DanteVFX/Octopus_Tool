@@ -5,7 +5,7 @@ This is tool is useful for Nuke Artist Who want to organize their project files 
 ## Table of Contents
 
 1. [How to Use](#how-to-use)
-   - [[New Project](#new-project)
+   - [New Project](#new-project)
    - [2nd. Set Project](#2nd-set-project)
    - [3rd. Open Project](#3rd-open-project)
    - [4th. Verify Read Nodes](#4th-verify-read-nodes)
@@ -39,6 +39,17 @@ The tool provides a simple graphical interface to manage projects in Nuke. Below
 - Once you have set the project name and path, you will be prompted to **save the project**. This step is **very important**, as a **JSON file** will be created, containing all relevant information about the project, ensuring that there are no problems with file management in the future.
 
 ![Create](https://github.com/user-attachments/assets/aaa89e40-acfb-41d1-b716-8e9d19e2ddd3)
+
+#### Resukt of Create Project
+- After create the project, you will find a json file(don't delete it, it the path of the project, it's usefull if you change of project or if you transfer it to other artist)
+  
+![json_create](https://github.com/user-attachments/assets/026f8498-ee3a-411d-b6d1-b1943514f3a6)
+
+
+## Config Project
+
+![Config_Tool](https://github.com/user-attachments/assets/04437246-ebbc-447a-a825-e8029958d60f)
+
 
 ### 2nd. Set Project:
 
