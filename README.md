@@ -92,33 +92,31 @@ This option makes it easy to deliver the project to other teams or store a well-
 
 ---
 
-## How To Install Plugin in Nuke
+# How To Install Plugin in Nuke
 
 To install a plugin in Nuke, follow these steps:
 
-### Create a New Folder for the Plugin:
+1. **Create a New Folder for the Plugin:**
+   - Navigate to the path `C:/Users/<your-username>/.nuke/` (replace `<your-username>` with your actual username).
+   - Create a new folder inside `.nuke/` and name it `"NewPlugin"`. This will be the directory where your plugin files will reside.
 
-   ##Navigate to the path 
-   C:/Users/<your-username>/.nuke/ (replace <your-username> with your actual username).
-   ##Create a new folder inside .nuke/ and name it something like "NewPlugin". This will be the directory where your plugin files will reside.
-   ##Create or Edit the init.py File:
+2. **Create or Edit the `init.py` File:**
+   - Inside the `.nuke/` directory, create a file called `init.py` (if it doesn’t already exist).
+   - Open `init.py` in a text editor and add the following code:
+     ```python
+     import nuke
+     
+     nuke.pluginAddPath("./NewPlugin")
+     nuke.pluginAddPath("./scripts")
+     ```
 
-Inside the .nuke/ directory, create a file called init.py (if it doesn’t already exist).
-Open init.py in a text editor and add the following code:
-python
-Copiar código
-import nuke
+3. **Move the Plugin Files:**
+   - Place the plugin files inside the `NewPlugin` folder you created earlier. This is where Nuke will search for the plugin scripts.
 
-nuke.pluginAddPath("./NewPlugin")
-nuke.pluginAddPath("./scripts")
-Move the Plugin Files:
+4. **Restart Nuke:**
+   - After saving the changes to `init.py` and adding the plugin files, restart Nuke to load the plugin.
 
-Place the plugin files inside the NewPlugin folder you created earlier. This is where Nuke will search for the plugin scripts.
-Restart Nuke:
-
-After saving the changes to init.py and adding the plugin files, restart Nuke to load the plugin.
-Verify Installation:
-
-Once Nuke is open, verify that the plugin is correctly installed by checking the relevant menus or running any associated commands.
+5. **Verify Installation:**
+   - Once Nuke is open, verify that the plugin is correctly installed by checking the relevant menus or running any associated commands.
 
 
