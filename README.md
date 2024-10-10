@@ -10,14 +10,10 @@ This is tool is useful for Nuke Artist Who want to organize their project files 
 1. [How to Use](#how-to-use)
    - [New Project](#new-project)
    - [Config Project](#config-project)
-   - [Configuration](#buttons-configuration)
+   - [Buttons Configuration](#buttons-configuration)
 2. [Instalation](#how-to-use)
-3. [Recomendation](#how-to-use)
-   - [3rd. Open Project](#3rd-open-project)
-   - [4th. Verify Read Nodes](#4th-verify-read-nodes)
-   - [5th. Get External Files](#5th-get-external-files)
-   - [6th. Convert to Relative Path](#6th-convert-to-relative-path)
-   - [7th. Package Project](#7th-package-project)
+  
+4. [Recomendation](#how-to-use)
 
 ### Description
 
@@ -95,4 +91,23 @@ The tool will package all project contents, including assets and scripts, into a
 This option makes it easy to deliver the project to other teams or store a well-organized backup.
 
 ---
+
+## Instalation
+
+To install a plugin in Nuke, follow these steps:
+create a file("NewPlugin") in the path C:/Users/<your-username>/.nuke/
+
+and create a init.py with the next code
+import nuke
+
+nuke.pluginAddPath("./NewPlugin")
+
+
+import nuke
+
+nuke.pluginAddPath("./scripts")
+
+
+create a file folder and paste the plugin.
+
 
