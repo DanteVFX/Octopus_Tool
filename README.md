@@ -107,7 +107,6 @@ To install a plugin in Nuke, follow these steps:
      import nuke
      
      nuke.pluginAddPath("./NewPlugin")
-     nuke.pluginAddPath("./scripts")
      ```
 
 3. **Move the Plugin Files:**
