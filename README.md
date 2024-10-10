@@ -9,7 +9,8 @@ This is tool is useful for Nuke Artist Who want to organize their project files 
 
 1. [How to Use](#how-to-use)
    - [New Project](#new-project)
-   - [2nd. Set Project](#2nd-set-project)
+   - [Config Project](#config-project)
+   - [Set Project](#set-project)
 2. [Instalation](#how-to-use)
 3. [Recomendation](#how-to-use)
    - [3rd. Open Project](#3rd-open-project)
@@ -45,8 +46,9 @@ The tool provides a simple graphical interface to manage projects in Nuke. Below
 
 ![Create](https://github.com/user-attachments/assets/aaa89e40-acfb-41d1-b716-8e9d19e2ddd3)
 
-#### Resukt of Create Project
-- After create the project, you will find a json file(don't delete it, it the path of the project, it's usefull if you change of project or if you transfer it to other artist)
+#### Result of Create Project
+- After create the project, you will find a json file(don't delete it).
+This Json containts information such as project path, project name. 
   
 ![json_create](https://github.com/user-attachments/assets/026f8498-ee3a-411d-b6d1-b1943514f3a6)
 
@@ -55,39 +57,42 @@ The tool provides a simple graphical interface to manage projects in Nuke. Below
 
 ![Config_Tool](https://github.com/user-attachments/assets/04437246-ebbc-447a-a825-e8029958d60f)
 
+The option at the beginning will be unable, to activate the option you need to vinculate the json created to the path.
 
-### 2nd. Set Project:
 
-- This option allows you to select an existing JSON file that contains the project configuration.
-- Once selected, the tool will load all the necessary paths and settings to activate the project in Nuke.
+## Buttons Configuration
+### Set Project:
+This button looks for a JSON file to retrieve the project paths.
+Verify that the JSON file connected to the UI is the project you want to work on, or you can modify another project if needed.
+In case you've moved the project to a different location, this button will update the paths inside the JSON file, as the current directory will now be where the project is set to work.
 
-### 3rd. Open Project:
+### Open Project:
+   Available when a JSON file is connected.
+This button read the project directory path inside the JSON file and open the project path directly.
 
-- Use this option to load an existing project based on its JSON configuration file.
-- This ensures that all relative paths and referenced files are correctly configured, making it easy to open previously created projects.
+### Verify Read Nodes:
+   Available when a JSON file is connected.
+This button will iterate over all Read nodes and check if their reference files are located outside the project directory.
+It will change the color of Read nodes that reference files outside the project.
 
-### 4th. Verify Read Nodes:
 
-- This option checks all the Read nodes in your Nuke script.
-- If any Read node references files located outside the project directory, they will be highlighted, and a message will indicate which nodes are pointing to external files.
 
-### 5th. Get External Files:
+### Get External Files:
+ Available when a JSON file is connected.
 
-- This feature allows you to automatically copy all external files (those outside the project folder) into the project folder structure.
-- This way, all assets will be located inside the project, making it easier to manage and share the project.
+This button allows you to copy external files and move them to the project directory. By default, it will create a "footage" folder where the external files will be copied.
+If the folder already exists, the files will be placed inside it.
 
-### 6th. Convert to Relative Path:
+### Convert to Relative Path:
+Available when a JSON file is connected.
 
-- This option converts all file paths in the project to relative paths based on the project directory.
-- It is useful to ensure that paths work correctly when moving the project between different computers or operating systems.
+Working with relative paths is essential when collaborating in a team. This feature converts the file paths of Read nodes into relative paths.
 
-### 7th. Package Project:
-
-- The tool will package all project contents, including assets and scripts, into a `.zip` file ready to be shared or archived.
-- This option makes it easy to deliver the project to other teams or store a well-organized backup.
+### Package Project:
+ Available when a JSON file is connected.
+ 
+The tool will package all project contents, including assets and scripts, into a `.zip` file ready to be shared or archived.
+This option makes it easy to deliver the project to other teams or store a well-organized backup.
 
 ---
 
-### Summary
-
-This tool simplifies project management in Nuke by automating many common tasks such as verifying paths, organizing files, and packaging the project. By following these steps, you can manage your projects efficiently and ensure that all paths and files are properly organized for future use.
