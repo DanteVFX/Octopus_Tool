@@ -2,11 +2,16 @@
 This is tool is useful for Nuke Artist Who want to organize their project files and have correct paths
 - Octopus Tool for Nuke
 
+![octopus](https://github.com/user-attachments/assets/0a20c4be-3d90-4fc1-b079-413dec9b1fd0)
+
+
 ## Table of Contents
 
 1. [How to Use](#how-to-use)
    - [New Project](#new-project)
    - [2nd. Set Project](#2nd-set-project)
+2. [Instalation](#how-to-use)
+3. [Recomendation](#how-to-use)
    - [3rd. Open Project](#3rd-open-project)
    - [4th. Verify Read Nodes](#4th-verify-read-nodes)
    - [5th. Get External Files](#5th-get-external-files)
