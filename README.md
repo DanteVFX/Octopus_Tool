@@ -10,7 +10,7 @@ This is tool is useful for Nuke Artist Who want to organize their project files 
 1. [How to Use](#how-to-use)
    - [New Project](#new-project)
    - [Config Project](#config-project)
-   - [Set Project](#set-project)
+   - [Configuration](#buttons-configuration)
 2. [Instalation](#how-to-use)
 3. [Recomendation](#how-to-use)
    - [3rd. Open Project](#3rd-open-project)
