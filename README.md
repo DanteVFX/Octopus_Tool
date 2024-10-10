@@ -92,15 +92,16 @@ This option makes it easy to deliver the project to other teams or store a well-
 
 ---
 
-## Instalation
+## How To Install Plugin in Nuke
 
 To install a plugin in Nuke, follow these steps:
 
-Create a New Folder for the Plugin:
+### Create a New Folder for the Plugin:
 
-Navigate to the path C:/Users/<your-username>/.nuke/ (replace <your-username> with your actual username).
-Create a new folder inside .nuke/ and name it something like "NewPlugin". This will be the directory where your plugin files will reside.
-Create or Edit the init.py File:
+   ##Navigate to the path 
+   C:/Users/<your-username>/.nuke/ (replace <your-username> with your actual username).
+   ##Create a new folder inside .nuke/ and name it something like "NewPlugin". This will be the directory where your plugin files will reside.
+   ##Create or Edit the init.py File:
 
 Inside the .nuke/ directory, create a file called init.py (if it doesn’t already exist).
 Open init.py in a text editor and add the following code:
